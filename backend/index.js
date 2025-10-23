@@ -2,7 +2,7 @@ const express = require('express');
 const {connectToMongoDB} = require('./connect');
 const urlRoute=require('./routes/url');
 const URL =require('./models/Url');
-const app = express();
+const app = express(); 
 const port = 8001;
 
 connectToMongoDB('mongodb+srv://utkarshpandeyup2004_db_user:utkarsh004@short-url.r3b4tzf.mongodb.net/').then(()=>console.log("Connected to MongoDB")).catch((err)=>console.error("Failed to connect to MongoDB",err));
